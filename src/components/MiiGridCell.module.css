@@ -1,0 +1,49 @@
+.cell {
+    width: 100%;
+    height: 4.5rem;
+    padding: 0.4rem;
+    border-radius: 6px;
+    border-width: 2px;
+    border-style: solid;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.2s;
+    cursor: pointer;
+    background-color: var(--dark-accent);
+}
+
+.cell:hover {
+    background-color: var(--dark-card);
+}
+
+.valid {
+    border-color: var(--mii-valid-border);
+    color: var(--dark-text);
+}
+
+.invalid {
+    border-color: var(--mii-invalid-border);
+    color: var(--dark-text-secondary);
+}
+
+.selected {
+    background-color: var(--dark-card);
+    border-color: var(--mii-selected-border);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+.miiName {
+    font-weight: 600;
+    font-size: 0.8rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.miiIndex {
+    font-size: 0.7rem;
+    color: var(--dark-text-secondary);
+    align-self: flex-end;
+}

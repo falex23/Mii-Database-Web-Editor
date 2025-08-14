@@ -1,0 +1,34 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.5rem;
+    padding: 1rem;
+    flex-grow: 1;
+    overflow-y: auto; 
+    align-content: start;
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(10, 1fr);
+    }
+}
+
+.welcomeContainer {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.welcomeMessage {
+    text-align: center;
+    color: var(--dark-text-secondary);
+}
+
+.welcomeMessage h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}

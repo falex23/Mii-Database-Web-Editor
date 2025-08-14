@@ -1,0 +1,42 @@
+:root {
+    --dark-bg: #323339;
+    --dark-card: #3A3B41;
+    --dark-accent: #4F5057;
+    --dark-text: #EAEAEA;
+    --dark-text-secondary: #B0B0B0;
+    
+    --mii-valid-border: #4CAF50;
+    --mii-invalid-border: #F44336;
+    --mii-selected-border: #03A9F4;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--dark-card);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--dark-accent);
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #6c6d74;
+}

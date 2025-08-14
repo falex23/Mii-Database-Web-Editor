@@ -1,0 +1,38 @@
+.header {
+    padding: 1rem;
+    background-color: var(--dark-bg);
+    border-bottom: 1px solid var(--dark-accent);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.buttonGroup {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.headerButton {
+    padding: 0.5rem 1rem;
+    background-color: var(--dark-card);
+    border-radius: 6px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s;
+    border: none;
+    color: var(--dark-text);
+    cursor: pointer;
+}
+
+.headerButton:hover {
+    background-color: var(--dark-accent);
+}
+
+.headerButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.hiddenInput {
+    display: none;
+}
